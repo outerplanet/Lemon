@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!--FAVICONS-->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -15,11 +14,9 @@
 	<meta name="msapplication-TileColor" content="#eaeaea">
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#eaeaea">
-	<!--FONTS-->
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,350;0,400;0,600;0,700;1,300;1,400&family=Open+Sans:wght@300;400&family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
 	<link href="fonts/sylfaen.ttf" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<!---->
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -32,28 +29,29 @@
 		<div class="page-width">
 			<div class="header__wrapper">
 				<img class="header__logo" src="img/logo3.png" alt="Logo">
-				<ul class="header__nav">
-					<li class="header__nav-item"><a class="header__nav-link" href="../Lemon">HOME</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">Recipes</a>
-						<ul class="header__nav-submenu">
-							<li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">RECOMMENDED</a></li>
-							<li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">POPULAR</a></li>
-							<li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">QUICK & EASY</a></li>
-							<li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">HEALTHY</a></li>
-							<li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">NEWEST</a></li>
-						</ul>
-					</li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">Photo Galleries</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">Videos</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">All Categories</a></li>
-				</ul>
+				<nav class="header__nav">
+					<a class="header__nav-link header__nav-item" href="/Lemon">HOME</a>
+					<div class="header__nav-item" href="#">
+						<a class="header__nav-link" href="#">Recipes</a>
+						<div class="header__nav-submenu">
+							<a class="header__nav-submenu-link" href="#">RECOMMENDED</a>
+							<a class="header__nav-submenu-link" href="#">POPULAR</a>
+							<a class="header__nav-submenu-link" href="#">QUICK & EASY</a>
+							<a class="header__nav-submenu-link" href="#">HEALTHY</a>
+							<a class="header__nav-submenu-link" href="#">NEWEST</a>
+						</div>
+					</div>
+					<a class="header__nav-link header__nav-item" href="#">Photo Galleries</a>
+					<a class="header__nav-link header__nav-item" href="#">Videos</a>
+					<a class="header__nav-link header__nav-item" href="#">All Categories</a>
+				</nav>
 				<div class="header__right">
 					<div class="header__search">
 						<input class="header__search-input" type="search" name="search" placeholder="Search...">
 						<button class="header__search-close" title="Close search">X</button>
 						<button class="header__search-btn" title="Open search">Find a recipe</button>
 					</div>
-					<button class="header__hamburger" title="Open menu"></button>
+					<button class="header__hamburger hamburger__button" aria-label="Open navigation"></button>
 				</div>
 			</div>
 		</div>
@@ -84,13 +82,13 @@
 							<a class="fab fa-pinterest footer__social-item" href="#" target="_blank"></a>
 						</div>
 					</div>
-					<ul class="footer__nav">
-						<li class="footer__nav-item"><a class="footer__nav-link" href="../Lemon">HOME</a></li>
-						<li class="footer__nav-item"><a class="footer__nav-link" href="#">Recipes</a></li>
-						<li class="footer__nav-item"><a class="footer__nav-link" href="#">Photo Galleries</a></li>
-						<li class="footer__nav-item"><a class="footer__nav-link" href="#">Videos</a></li>
-						<li class="footer__nav-item"><a class="footer__nav-link" href="#">All Categories</a></li>
-					</ul>
+					<nav class="footer__nav">
+						<a class="footer__nav-link" href="/Lemon">HOME</a>
+						<a class="footer__nav-link" href="#">Recipes</a>
+						<a class="footer__nav-link" href="#">Photo Galleries</a>
+						<a class="footer__nav-link" href="#">Videos</a>
+						<a class="footer__nav-link" href="#">All Categories</a>
+					</nav>
 					<div class="footer__text-container">
 						<p class="footer__text">2016-2017 LEMON. All rights reserved</p>
 					</div>
@@ -108,25 +106,25 @@
 		</div>
 	</footer>
 	<div class="hamburger">
-		<div class="hamburger__menu">
-			<ul class="hamburger__nav">
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="../Lemon">HOME</a></li>
-				<li class="hamburger__nav-item hamburger__submenu-parent"><button class="hamburger__nav-link hamburger__nav-button">Recipes</button>
-					<ul class="hamburger__nav-submenu">
-						<li class="hamburger__nav-submenu-item"><a class="hamburger__nav-submenu-link" href="#">RECOMMENDED</a></li>
-						<li class="hamburger__nav-submenu-item"><a class="hamburger__nav-submenu-link" href="#">POPULAR</a></li>
-						<li class="hamburger__nav-submenu-item"><a class="hamburger__nav-submenu-link" href="#">QUICK & EASY</a></li>
-						<li class="hamburger__nav-submenu-item"><a class="hamburger__nav-submenu-link" href="#">HEALTHY</a></li>
-						<li class="hamburger__nav-submenu-item"><a class="hamburger__nav-submenu-link" href="#">NEWEST</a></li>
-					</ul>
-				</li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#">Photo Galleries</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#">Videos</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#">All Categories</a></li>
-			</ul>
+		<div class="hamburger__wrapper">
+			<nav class="hamburger__nav">
+				<a class="hamburger__nav-link hamburger__nav-item" href="/Lemon">HOME</a>
+				<div class="hamburger__nav-accordion hamburger__nav-item accordion">
+					<a class="hamburger__nav-accordion-button hamburger__nav-link accordion__button" href="javascript:void(0)">Recipes</a>
+					<div class="hamburger__nav-accordion accordion__wrapper">
+						<a class="hamburger__nav-accordion-link" href="#">RECOMMENDED</a>
+						<a class="hamburger__nav-accordion-link" href="#">POPULAR</a>
+						<a class="hamburger__nav-accordion-link" href="#">QUICK & EASY</a>
+						<a class="hamburger__nav-accordion-link" href="#">HEALTHY</a>
+						<a class="hamburger__nav-accordion-link" href="#">NEWEST</a>
+					</div>
+				</div>
+				<a class="hamburger__nav-link hamburger__nav-item" href="#">Photo Galleries</a>
+				<a class="hamburger__nav-link hamburger__nav-item" href="#">Videos</a>
+				<a class="hamburger__nav-link hamburger__nav-item" href="#">All Categories</a>
+			</nav>
 		</div>
 	</div>
-	<script src="script/script.js"></script>
-	<script src="script/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

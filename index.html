@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!--FAVICONS-->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -15,11 +14,9 @@
 	<meta name="msapplication-TileColor" content="#eaeaea">
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#eaeaea">
-	<!--FONTS-->
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,350;0,400;0,600;0,700;1,300;1,400&family=Open+Sans:wght@300;400&family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
 	<link href="fonts/sylfaen.ttf" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<!---->
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -32,138 +29,82 @@
 		<div class="page-width">
 			<div class="header__wrapper">
 				<img class="header__logo" src="img/logo3.png" alt="Logo">
-				<ul class="header__nav">
-					<li class="header__nav-item"><a class="header__nav-link" href="../Lemon">HOME</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">Recipes</a>
-						<ul class="header__nav-submenu">
-							<li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">RECOMMENDED</a></li>
-							<li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">POPULAR</a></li>
-							<li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">QUICK & EASY</a></li>
-							<li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">HEALTHY</a></li>
-							<li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">NEWEST</a></li>
-						</ul>
-					</li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">Photo Galleries</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">Videos</a></li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#">All Categories</a></li>
-				</ul>
+				<nav class="header__nav">
+					<a class="header__nav-link header__nav-item" href="/Lemon">HOME</a>
+					<div class="header__nav-item" href="#">
+						<a class="header__nav-link" href="#">Recipes</a>
+						<div class="header__nav-submenu">
+							<a class="header__nav-submenu-link" href="#">RECOMMENDED</a>
+							<a class="header__nav-submenu-link" href="#">POPULAR</a>
+							<a class="header__nav-submenu-link" href="#">QUICK & EASY</a>
+							<a class="header__nav-submenu-link" href="#">HEALTHY</a>
+							<a class="header__nav-submenu-link" href="#">NEWEST</a>
+						</div>
+					</div>
+					<a class="header__nav-link header__nav-item" href="#">Photo Galleries</a>
+					<a class="header__nav-link header__nav-item" href="#">Videos</a>
+					<a class="header__nav-link header__nav-item" href="#">All Categories</a>
+				</nav>
 				<div class="header__right">
 					<div class="header__search">
 						<input class="header__search-input" type="search" name="search" placeholder="Search...">
 						<button class="header__search-close" title="Close search">X</button>
 						<button class="header__search-btn" title="Open search">Find a recipe</button>
 					</div>
-					<button class="header__hamburger" title="Open menu"></button>
+					<button class="header__hamburger hamburger__button" aria-label="Open navigation"></button>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main class="main">
-		<section class="layer1">
+		<section class="banner">
 			<div class="page-width">
-				<div class="layer1__wrapper">
-					<img class="layer1__logo" src="img/logo2.png" alt="Logo">
-					<h1 class="layer1__title">Bananas Foster Ice Cream Cake</h1>
-					<p class="layer1__text">If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly, this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.</p>
-					<a href="#" class="layer1__button">GET IT RECIPE</a>
+				<div class="banner__wrapper">
+					<img class="banner__logo" src="img/logo2.png" alt="Logo">
+					<h1 class="banner__title">Bananas Foster Ice Cream Cake</h1>
+					<p class="banner__text">If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly, this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.</p>
+					<a class="banner__button" href="#">GET IT RECIPE</a>
 				</div>
 			</div>
-			<div class="mobile-layer1__wrapper">
-				<img class="mobile-layer1__img" src="img/layer1-mobile.jpg" alt="">
-				<a href="#" class="mobile-layer1__button">GET IT RECIPE</a>
+			<div class="mobile-banner__wrapper">
+				<img class="mobile-banner__img" src="img/banner-mobile.jpg" alt="">
+				<a class="mobile-banner__button" href="#">GET IT RECIPE</a>
 			</div>
 		</section>
-		<section class="layer2">
+		<section class="recipes">
 			<div class="page-width">
-				<div class="layer2__wrapper">
-					<div class="layer2__cards">
-						<div class="layer2__card">
-							<a href="#"><img src="img/recipe1.jpg" alt="Recipe"></a>
-							<div class="layer2__card-article">
-								<a href="#"><p class="layer2__card-title">Raspberry & Cream Frozen Yogurt Pie</p></a>
-								<div class="layer2__card-info recipe-info">
-									<p class="layer2__card-info1 recipe-info1">35mins</p>
-									<p class="layer2__card-info2 recipe-info2">7</p>
-									<p class="layer2__card-info3 recipe-info3">14</p>
+				<div class="recipes__wrapper">
+					<div class="recipes__cards">
+						<div class="recipes__card">
+							<a class="recipes__card-img-container" href="#"><img class="recipes__card-img" src="img/recipe1.jpg" alt="Recipe"></a>
+							<div class="recipes__card-article">
+								<a class="recipes__card-title" href="#">Raspberry & Cream Frozen Yogurt Pie</a>
+								<div class="recipes__card-info recipe-info">
+									<p class="recipes__card-info1 recipe-info1">35mins</p>
+									<p class="recipes__card-info2 recipe-info2">7</p>
+									<p class="recipes__card-info3 recipe-info3">14</p>
 								</div>
 							</div>
 						</div>
-						<div class="layer2__card">
-							<a href="#"><img src="img/recipe2.jpg" alt="Recipe"></a>
-							<div class="layer2__card-article">
-								<a href="#"><p class="layer2__card-title">Giant Ice Cream Sandwich</p></a>
-								<div class="layer2__card-info recipe-info">
-									<p class="layer2__card-info1 recipe-info1">20mins</p>
-									<p class="layer2__card-info2 recipe-info2">4</p>
-									<p class="layer2__card-info3 recipe-info3">356</p>
+						<div class="recipes__card">
+							<a class="recipes__card-img-container" href="#"><img class="recipes__card-img" src="img/recipe2.jpg" alt="Recipe"></a>
+							<div class="recipes__card-article">
+								<a class="recipes__card-title" href="#">Giant Ice Cream Sandwich</a>
+								<div class="recipes__card-info recipe-info">
+									<p class="recipes__card-info1 recipe-info1">20mins</p>
+									<p class="recipes__card-info2 recipe-info2">4</p>
+									<p class="recipes__card-info3 recipe-info3">356</p>
 								</div>
 							</div>
 						</div>
-						<div class="layer2__card">
-							<a href="#"><img src="img/recipe3.jpg" alt="Recipe"></a>
-							<div class="layer2__card-article">
-								<a href="#"><p class="layer2__card-title">Dark Chocolate Crunch Ice Cream Sandwich Cake</p></a>
-								<div class="layer2__card-info recipe-info">
-									<p class="layer2__card-info1 recipe-info1">15mins</p>
-									<p class="layer2__card-info2 recipe-info2">4</p>
-									<p class="layer2__card-info3 recipe-info3">167</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="layer3">
-			<div class="page-width">
-				<div class="layer3__wrapper">
-					<div class="layer3__img">
-						<img src="img/layer3.jpg" alt="Recipe">
-					</div>
-					<div class="layer3__article">
-						<div class="layer3__article-wrapper">
-							<h1 class="layer3__article-title">Bananas Foster Ice Cream Cake</h1>
-							<div class="layer3__article-bar">
-								<div class="layer3__article-info recipe-info">
-									<p class="layer3__article-info1 recipe-info1">15mins</p>
-									<p class="layer3__article-info2 recipe-info2">Easy</p>
-								</div>
-								<a class="layer3__article-button" href="#">SAVE RECIPE</a>
-							</div>
-							<p class="layer3__article-text">1 (8 ounce) container frozen whipped topping, thawed<br>20 chocolate round wafers, divided<br>1 (7 1/4 ounce) bottle Smucker's® Hot Dark Chocolate Microwaveable Topping, divided<span class="layer3__article-text-title">Directions</span>ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting to form an even layer. Spread with half of whipped topping. Break or crush chocolate wafers and sprinkle over the whipped cream. Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers.<br>TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or overnight. Remove from freezer 10 minutes before serving. Cut into squares. HEAT remaining topping. Drizzle each serving with topping. Sprinkle with decorator sprinkles.<br>Nutritional information (amount per servings): Total Calories: 640. Sodium 440mg. Fat: 32g. Carbohydrates: 82g. Cholesterol: 40mg. Protein: 11g. Fiber: 1g.<span class ="test">վ</span></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="layer4">
-			<div class="page-width">
-				<div class="layer4__wrapper">
-					<div class="layer4__item1">
-						<h3 class="layer4__item1-header">404</h3>
-						<div class="layer4__item1-wrapper">
-							<h2 class="layer4__item1-title">Sorry</h2>
-							<p class="layer4__item1-text">WE COULDN’T<br>FIND THE PAGE</p>
-							<a class="layer4__item1-button" href="javascript:history.back()">BACK</a>
-						</div>
-					</div>
-					<div class="layer4__item2">
-						<h3 class="layer4__item2-header">Author</h3>
-						<div class="layer4__item2-wrapper">
-							<img class="layer4__item2-img" src="img/layer4img2.png" alt="Karen Gray">
-							<div class="layer4__item2-content">
-								<h3 class="layer4__item2-title">Karen Gray</h3>
-								<p class="layer4__item2-region">United States</p>
-								<div class="layer4__item2-social">
-									<a class="fab fa-google-plus-g layer4__item2-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-twitter layer4__item2-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-facebook-f layer4__item2-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-pinterest layer4__item2-social-item" href="#" target="_blank"></a>
-								</div>
-								<div class="layer4__item2-article">
-									<h3 class="layer4__item2-article-title">About Lemon</h3>
-									<p class="layer4__item2-article-text">Over the fifteen-year life span of Food.com, we’ve learned that – in addition to eating – sharing is what you do best. And thanks to the 20 million of you who come here each month, we now have 500,000 recipes to show for it, more than anywhere else in the digital universe. We also have tons crazy-tempting photos, troves of recipe reviews and more than 2 million Facebook likes. That’s a heck of a lot of Food. Thank you!</p>
-									<img class="layer4__item2-article-signature" src="img/layer4img3.png" alt="Signature">
+						<div class="recipes__card">
+							<a class="recipes__card-img-container" href="#"><img class="recipes__card-img" src="img/recipe3.jpg" alt="Recipe"></a>
+							<div class="recipes__card-article">
+								<a class="recipes__card-title" href="#">Dark Chocolate Crunch Ice Cream Sandwich Cake</a>
+								<div class="recipes__card-info recipe-info">
+									<p class="recipes__card-info1 recipe-info1">15mins</p>
+									<p class="recipes__card-info2 recipe-info2">4</p>
+									<p class="recipes__card-info3 recipe-info3">167</p>
 								</div>
 							</div>
 						</div>
@@ -171,400 +112,509 @@
 				</div>
 			</div>
 		</section>
-		<section class="layer5">
+		<section class="full-recipe">
 			<div class="page-width">
-				<div class="layer5__wrapper">
-					<div class="layer5__column1 layer5__column">
-						<div class="layer5__card1 layer5__card">
-							<div class="layer5__card1-header">
-								<a href="#"><p class="layer5__card1-header-title">Chi-Chi or Chichi</p></a>
-							</div>
-							<div class="layer5__card1-content">
-								<img class="layer5__card1-avatar avatar" src="img/avatar.png" alt="Avatar">
-								<div class="layer5__card1-text">
-									<div class="layer5__card1-title">
-										<a href="#">Recipe by<br></a>
-										<a class="layer5__card1-author author" href="#">Smuckersreg Toppings</a>
-									</div>
-									<div class="layer5__card1-info recipe-info">
-										<p class="layer5__card1-info1 recipe-info1">15mins</p>
-										<p class="layer5__card1-info2 recipe-info2">12</p>
-										<p class="layer5__card1-info3 recipe-info3">37</p>
-									</div>
-								</div>
-							</div>
-							<div class="layer5__card1-img-container">
-								<img class="layer5__card1-img" src="img/recipe1.jpg" alt="Recipe">
-								<img class="layer5__card1-img" src="img/recipe2.jpg" alt="Recipe">
-								<img class="layer5__card1-img" src="img/layer5card1img.jpg" alt="Recipe">
-								<img class="layer5__card1-img" src="img/recipe3.jpg" alt="Recipe">
-								<img class="layer5__card1-img" src="img/layer3.jpg" alt="Recipe">
-								<div class="layer5__card1-img-tabs">
-									<button class="layer5__card1-img-tab" type="button"></button>
-									<button class="layer5__card1-img-tab" type="button"></button>
-									<button class="layer5__card1-img-tab" type="button"></button>
-									<button class="layer5__card1-img-tab" type="button"></button>
-									<button class="layer5__card1-img-tab" type="button"></button>
-								</div>
-							</div>
-						</div>
-						<div class="layer5__card2 layer5__card">
-							<div class="layer5__card2-header">
-								<h3 class="layer5__card2-header-title">Target</h3>
-								<div class="layer5__card-header-social">
-									<a class="fas fa-print layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="far fa-envelope layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-facebook-f layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-pinterest-square layer5__card-header-social-item" href="#" target="_blank"></a>
-								</div>
-							</div>
-							<a class="layer5__card2-title" href="#">Presentation line</a>
-							<div class="layer5__card2-item">
-								<a class="layer5__card2-item-img1 layer5__card2-item-img" href="#">19%</a>
-								<div class="layer5__card2-item-article">
-									<a class="layer5__card2-item-title" href="#">Housewives</a>
-									<a class="layer5__card2-item-text" href="#">Lorem ipsum dolor sit amet, prima ceteros.</a>
-								</div>
-							</div>
-							<div class="layer5__card2-item">
-								<a class="layer5__card2-item-img2 layer5__card2-item-img" href="#">65%</a>
-								<div class="layer5__card2-item-article">
-									<a class="layer5__card2-item-title" href="#">Newlyweds</a>
-									<a class="layer5__card2-item-text" href="#">Has brute elitr deserunt ea, assentior eloquentiam neglegentur te sed.</a>
-								</div>
-							</div>
-							<div class="layer5__card2-item">
-								<a class="layer5__card2-item-img3 layer5__card2-item-img" href="#">50%</a>
-								<div class="layer5__card2-item-article">
-									<a class="layer5__card2-item-title" href="#">Business lady</a>
-									<a class="layer5__card2-item-text" href="#">Ei nam primis putent signiferumque.</a>
-								</div>
-							</div>
-						</div>
+				<div class="full-recipe__wrapper">
+					<div class="full-recipe__img">
+						<img src="img/full-recipe-img.jpg" alt="Recipe">
 					</div>
-					<div class="layer5__column2 layer5__column">
-						<div class="layer5__card3 layer5__card">
-							<div class="layer5__card3-header">
-								<h3 class="layer5__card3-header-title">Recipe</h3>
-								<div class="layer5__card-header-social">
-									<a class="fas fa-print layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="far fa-envelope layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-facebook-f layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-pinterest-square layer5__card-header-social-item" href="#" target="_blank"></a>
+					<div class="full-recipe__article">
+						<div class="full-recipe__article-wrapper">
+							<h1 class="full-recipe__article-title">Bananas Foster Ice Cream Cake</h1>
+							<div class="full-recipe__article-bar">
+								<div class="full-recipe__article-info recipe-info">
+									<p class="full-recipe__article-info1 recipe-info1">15mins</p>
+									<p class="full-recipe__article-info2 recipe-info2">Easy</p>
 								</div>
+								<a class="full-recipe__article-button" href="#">SAVE RECIPE</a>
 							</div>
-							<div class="layer5__card3-bar">
-								<a class="layer5__card3-bar-item active" href="#">easy</a>
-								<a class="layer5__card3-bar-item" href="#">middle</a>
-								<a class="layer5__card3-bar-item" href="#">long</a>
-							</div>
-							<div class="layer5__card3-item">
-								<a class="layer5__card3-item-img" href="#"><img src="img/layer5card3img1.jpg" alt="Recipe"></a>
-								<div class="layer5__card3-item-article">
-									<a class="layer5__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
-									<a class="layer5__card3-item-text" href="#">Thanks for the recipe lorem ipsum bla bla bla<br>Thanks for the recipe lore</a>
-								</div>
-							</div>
-							<div class="layer5__card3-item">
-								<a class="layer5__card3-item-img" href="#"><img src="img/layer5card3img2.jpg" alt="Recipe"></a>
-								<div class="layer5__card3-item-article">
-									<a class="layer5__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
-									<a class="layer5__card3-item-text" href="#">Thanks for the recipe lorem nks for the recipe</a>
-								</div>
-							</div>
-							<div class="layer5__card3-item">
-								<a class="layer5__card3-item-img" href="#"><img src="img/layer5card3img3.jpg" alt="Recipe"></a>
-								<div class="layer5__card3-item-article">
-									<a class="layer5__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
-									<a class="layer5__card3-item-text" href="#">Thanks for the recipe lorem nks for the recipe</a>
-								</div>
-							</div>
-							<div class="layer5__card3-footer">
-								<div class="layer5__card3-footer-social">
-									<a class="fas fa-print layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="far fa-envelope layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-facebook-f layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-pinterest-square layer5__card-header-social-item" href="#" target="_blank"></a>
-								</div>
-								<a class="layer5__card3-footer-button" href="#">view more</a>
-							</div>
-						</div>
-						<div class="layer5__card4 layer5__card">
-							<h3 class="layer5__card4-header">Tags</h3>
-							<a class="layer5__card4-tag" href="#">#yummy</a>
-							<a class="layer5__card4-tag" href="#">#sweet</a>
-							<a class="layer5__card4-tag" href="#">#dinner</a>
-							<a class="layer5__card4-tag" href="#">#lunch</a>
-							<a class="layer5__card4-tag" href="#">#breakfast</a>
-							<a class="layer5__card4-tag" href="#">#fresh</a>
-							<a class="layer5__card4-tag" href="#">#tasty</a>
-							<a class="layer5__card4-tag" href="#">#delish</a>
-							<a class="layer5__card4-tag" href="#">#delicious</a>
-							<a class="layer5__card4-tag" href="#">#eating</a>
-							<a class="layer5__card4-tag" href="#">#food</a>
-						</div>
-						<div class="layer5__card5 layer5__card">
-							<h3 class="layer5__card5-header">Calendar</h3>
-							<div class="layer5__card5-calendar">
-								<div class="layer5__card5-calendar-bar">
-									<button class="fas fa-angle-left layer5__card5-calendar-button"></button>
-									<p class="layer5__card5-calendar-date">June 2017</p>
-									<button class="fas fa-angle-right layer5__card5-calendar-button"></button>
-								</div>
-								<div class="layer5__card5-calendar-content">
-									<a class="layer5__card5-calendar-week" href="#">Su</a>
-									<a class="layer5__card5-calendar-week" href="#">Mo</a>
-									<a class="layer5__card5-calendar-week" href="#">Tu</a>
-									<a class="layer5__card5-calendar-week" href="#">We</a>
-									<a class="layer5__card5-calendar-week" href="#">Th</a>
-									<a class="layer5__card5-calendar-week" href="#">Fr</a>
-									<a class="layer5__card5-calendar-week" href="#">Sa</a>
-									<a class="layer5__card5-calendar-day not-active" href="#">28</a>
-									<a class="layer5__card5-calendar-day not-active" href="#">29</a>
-									<a class="layer5__card5-calendar-day not-active" href="#">30</a>
-									<a class="layer5__card5-calendar-day not-active" href="#">31</a>
-									<a class="layer5__card5-calendar-day" href="#">1</a>
-									<a class="layer5__card5-calendar-day" href="#">2</a>
-									<a class="layer5__card5-calendar-day" href="#">3</a>
-									<a class="layer5__card5-calendar-day" href="#">4</a>
-									<a class="layer5__card5-calendar-day" href="#">5</a>
-									<a class="layer5__card5-calendar-day" href="#">6</a>
-									<a class="layer5__card5-calendar-day" href="#">7</a>
-									<a class="layer5__card5-calendar-day" href="#">8</a>
-									<a class="layer5__card5-calendar-day" href="#">9</a>
-									<a class="layer5__card5-calendar-day" href="#">10</a>
-									<a class="layer5__card5-calendar-day" href="#">11</a>
-									<a class="layer5__card5-calendar-day" href="#">12</a>
-									<a class="layer5__card5-calendar-day" href="#">13</a>
-									<a class="layer5__card5-calendar-day" href="#">14</a>
-									<a class="layer5__card5-calendar-day" href="#">15</a>
-									<a class="layer5__card5-calendar-day" href="#">16</a>
-									<a class="layer5__card5-calendar-day" href="#">17</a>
-									<a class="layer5__card5-calendar-day" href="#">18</a>
-									<a class="layer5__card5-calendar-day" href="#">19</a>
-									<a class="layer5__card5-calendar-day" href="#">20</a>
-									<a class="layer5__card5-calendar-day" href="#">21</a>
-									<a class="layer5__card5-calendar-day" href="#">22</a>
-									<a class="layer5__card5-calendar-day" href="#">23</a>
-									<a class="layer5__card5-calendar-day" href="#">24</a>
-									<a class="layer5__card5-calendar-day" href="#">25</a>
-									<a class="layer5__card5-calendar-day" href="#">26</a>
-									<a class="layer5__card5-calendar-day" href="#">27</a>
-									<a class="layer5__card5-calendar-day" href="#">28</a>
-									<a class="layer5__card5-calendar-day" href="#">29</a>
-									<a class="layer5__card5-calendar-day" href="#">30</a>
-									<a class="layer5__card5-calendar-day not-active" href="#">1</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="layer5__column3 layer5__column">
-						<div class="layer5__card6 layer5__card">
-							<h3 class="layer5__card6-header">Popular Now</h3>
-							<a class="layer5__card6-title" href="#">Vanilla Frozen Coffee</a>
-							<p class="layer5__card6-text">Mix coffee, sugar and creamer.<br>Pour into blender and add ice cubes.<br>Blend until smooth.</p>
-							<div class="layer5__card6-bar">
-								<a href="#" class="layer5__card6-button">GET IT RECIPE</a>
-								<div class="layer5__card6-info recipe-info">
-									<p class="layer5__card6-info1 recipe-info1">6mins</p>
-									<p class="layer5__card6-info2 recipe-info2">240</p>
-									<p class="layer5__card6-info3 recipe-info3">400</p>
-								</div>
-							</div>
-						</div>
-						<div class="layer5__card7 layer5__card">
-							<div class="layer5__card7-header">
-								<h3 class="layer5__card7-header-title">Timeline</h3>
-								<div class="layer5__card-header-social">
-									<a class="fas fa-print layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="far fa-envelope layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-facebook-f layer5__card-header-social-item" href="#" target="_blank"></a>
-									<a class="fab fa-pinterest-square layer5__card-header-social-item" href="#" target="_blank"></a>
-								</div>
-							</div>
-							<a class="layer5__card7-title" href="#">Time line</a>
-							<div class="layer5__card7-container">
-								<div class="layer5__card7-item1 layer5__card7-item">
-									<p class="layer5__card7-item-title">easy</p>
-									<div class="layer5__card7-item-bar">
-										<div class="layer5__card7-item-progress1"></div>
-										<p class="layer5__card7-item-text">15mins</p>
-									</div>
-								</div>
-								<div class="layer5__card7-item2 layer5__card7-item">
-									<p class="layer5__card7-item-title">MIDDLE</p>
-									<div class="layer5__card7-item-bar">
-										<div class="layer5__card7-item-progress2"></div>
-										<p class="layer5__card7-item-text">25mins</p>
-									</div>
-								</div>
-								<div class="layer5__card7-item3 layer5__card7-item">
-									<p class="layer5__card7-item-title">LONG</p>
-									<div class="layer5__card7-item-bar">
-										<div class="layer5__card7-item-progress3"></div>
-										<p class="layer5__card7-item-text">40mins</p>
-									</div>
-								</div>
-							</div>
-							<p class="layer5__card7-text">Eam adhuc iudico percipitur ex, ut malis audire voluptaria has.</p>
+							<p class="full-recipe__article-text">1 (8 ounce) container frozen whipped topping, thawed<br>20 chocolate round wafers, divided<br>1 (7 1/4 ounce) bottle Smucker's® Hot Dark Chocolate Microwaveable Topping, divided<span class="full-recipe__article-text-title">Directions</span>ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting to form an even layer. Spread with half of whipped topping. Break or crush chocolate wafers and sprinkle over the whipped cream. Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers.<br>TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or overnight. Remove from freezer 10 minutes before serving. Cut into squares. HEAT remaining topping. Drizzle each serving with topping. Sprinkle with decorator sprinkles.<br>Nutritional information (amount per servings): Total Calories: 640. Sodium 440mg. Fat: 32g. Carbohydrates: 82g. Cholesterol: 40mg. Protein: 11g. Fiber: 1g.<span class="test">վ</span></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="layer6">
+		<section class="review">
 			<div class="page-width">
-				<div class="layer6__wrapper">
-					<div class="layer6__card1 layer6__card">
-						<h3 class="layer6__card-header">Login</h3>
-						<p class="layer6__card-title">Login for LEMON</p>
-						<form class="layer6__card-form" method="post" enctype="multipart/form-data">
-							<input class="layer6__card-input" type="text" name="login" placeholder="email or login">
-							<input class="layer6__card-input" type="password" name="password" placeholder="password">
-							<div class="layer6__card1-options">
-								<label class="layer6__card1-options-save" for="save-auth">
-									<input class="layer6__card1-options-save-check" id="save-auth" type="checkbox" name="save-auth" value="">
-									<span class="layer6__card1-options-text">Remember me</span>
+				<div class="review__wrapper">
+					<div class="review__item1">
+						<h3 class="review__item1-header">404</h3>
+						<div class="review__item1-wrapper">
+							<h2 class="review__item1-title">Sorry</h2>
+							<p class="review__item1-text">WE COULDN’T<br>FIND THE PAGE</p>
+							<a class="review__item1-button" href="javascript:history.back()">BACK</a>
+						</div>
+					</div>
+					<div class="review__item2">
+						<h3 class="review__item2-header">Author</h3>
+						<div class="review__item2-wrapper">
+							<img class="review__item2-img" src="img/review-img2.png" alt="Karen Gray">
+							<div class="review__item2-content">
+								<h3 class="review__item2-title">Karen Gray</h3>
+								<p class="review__item2-region">United States</p>
+								<div class="review__item2-social">
+									<a class="fab fa-google-plus-g review__item2-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-twitter review__item2-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-facebook-f review__item2-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-pinterest review__item2-social-item" href="#" target="_blank"></a>
+								</div>
+								<div class="review__item2-article">
+									<h3 class="review__item2-article-title">About Lemon</h3>
+									<p class="review__item2-article-text">Over the fifteen-year life span of Food.com, we’ve learned that – in addition to eating – sharing is what you do best. And thanks to the 20 million of you who come here each month, we now have 500,000 recipes to show for it, more than anywhere else in the digital universe. We also have tons crazy-tempting photos, troves of recipe reviews and more than 2 million Facebook likes. That’s a heck of a lot of Food. Thank you!</p>
+									<img class="review__item2-article-signature" src="img/review-img3.png" alt="Signature">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="grid-section">
+			<div class="page-width">
+				<div class="grid-section__wrapper">
+					<div class="grid-section__column1 grid-section__column">
+						<div class="grid-section__card1 grid-section__card">
+							<div class="grid-section__card1-header">
+								<a class="grid-section__card1-header-title-container" href="#">
+									<p class="grid-section__card1-header-title">Chi-Chi or Chichi</p>
+								</a>
+							</div>
+							<div class="grid-section__card1-content">
+								<img class="grid-section__card1-avatar avatar" src="img/avatar.png" alt="Avatar">
+								<div class="grid-section__card1-text">
+									<div class="grid-section__card1-title">
+										<p class="grid-section__card1-title-text">Recipe by</p>
+										<a class="grid-section__card1-author author" href="#">Smuckersreg Toppings</a>
+									</div>
+									<div class="grid-section__card1-info recipe-info">
+										<p class="grid-section__card1-info1 recipe-info1">15mins</p>
+										<p class="grid-section__card1-info2 recipe-info2">12</p>
+										<p class="grid-section__card1-info3 recipe-info3">37</p>
+									</div>
+								</div>
+							</div>
+							<div class="grid-section__card1-tab tab">
+								<div class="grid-section__card1-tabs-container">
+									<img class="grid-section__card1-tab-item tab__item" src="img/recipe1.jpg" alt="Recipe">
+									<img class="grid-section__card1-tab-item tab__item" src="img/recipe2.jpg" alt="Recipe">
+									<img class="grid-section__card1-tab-item tab__item tab__item--active" src="img/grid-section-card1-img.jpg" alt="Recipe">
+									<img class="grid-section__card1-tab-item tab__item" src="img/recipe3.jpg" alt="Recipe">
+									<img class="grid-section__card1-tab-item tab__item" src="img/full-recipe-img.jpg" alt="Recipe">
+								</div>
+								<div class="grid-section__card1-tab-buttons">
+									<button class="grid-section__card1-tab-button tab__button"></button>
+									<button class="grid-section__card1-tab-button tab__button"></button>
+									<button class="grid-section__card1-tab-button tab__button tab__button tab__button--active"></button>
+									<button class="grid-section__card1-tab-button tab__button"></button>
+									<button class="grid-section__card1-tab-button tab__button"></button>
+								</div>
+							</div>
+						</div>
+						<div class="grid-section__card2 grid-section__card">
+							<div class="grid-section__card2-header">
+								<h3 class="grid-section__card2-header-title">Target</h3>
+								<div class="grid-section__card-header-social">
+									<a class="fas fa-print grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="far fa-envelope grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-facebook-f grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-pinterest-square grid-section__card-header-social-item" href="#" target="_blank"></a>
+								</div>
+							</div>
+							<a class="grid-section__card2-title" href="#">Presentation line</a>
+							<div class="grid-section__card2-item">
+								<a class="grid-section__card2-item-img1 grid-section__card2-item-img" href="#">19%</a>
+								<div class="grid-section__card2-item-article">
+									<a class="grid-section__card2-item-title" href="#">Housewives</a>
+									<p class="grid-section__card2-item-text">Lorem ipsum dolor sit amet, prima ceteros.</p>
+								</div>
+							</div>
+							<div class="grid-section__card2-item">
+								<a class="grid-section__card2-item-img2 grid-section__card2-item-img" href="#">65%</a>
+								<div class="grid-section__card2-item-article">
+									<a class="grid-section__card2-item-title" href="#">Newlyweds</a>
+									<p class="grid-section__card2-item-text">Has brute elitr deserunt ea, assentior eloquentiam neglegentur te sed.</p>
+								</div>
+							</div>
+							<div class="grid-section__card2-item">
+								<a class="grid-section__card2-item-img3 grid-section__card2-item-img" href="#">50%</a>
+								<div class="grid-section__card2-item-article">
+									<a class="grid-section__card2-item-title" href="#">Business lady</a>
+									<p class="grid-section__card2-item-text">Ei nam primis putent signiferumque.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-section__column2 grid-section__column">
+						<div class="grid-section__card3 grid-section__card tab">
+							<div class="grid-section__card3-header">
+								<h3 class="grid-section__card3-header-title">Recipe</h3>
+								<div class="grid-section__card-header-social">
+									<a class="fas fa-print grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="far fa-envelope grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-facebook-f grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-pinterest-square grid-section__card-header-social-item" href="#" target="_blank"></a>
+								</div>
+							</div>
+							<div class="grid-section__card3-tab-buttons">
+								<a class="grid-section__card3-tab-button tab__button tab__button--active" href="javascript:void(0)">easy</a>
+								<a class="grid-section__card3-tab-button tab__button" href="javascript:void(0)">middle</a>
+								<a class="grid-section__card3-tab-button tab__button" href="javascript:void(0)">long</a>
+							</div>
+							<div class="grid-section__card3-tab-item tab__item tab__item--active">
+								<div class="grid-section__card3-item">
+									<a class="grid-section__card3-item-img" href="#"><img src="img/grid-section-card3-img1.jpg" alt="Recipe"></a>
+									<div class="grid-section__card3-item-article">
+										<a class="grid-section__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
+										<a class="grid-section__card3-item-text" href="#">Thanks for the recipe lorem ipsum bla bla bla<br>Thanks for the recipe lore</a>
+									</div>
+								</div>
+								<div class="grid-section__card3-item">
+									<a class="grid-section__card3-item-img" href="#"><img src="img/grid-section-card3-img2.jpg" alt="Recipe"></a>
+									<div class="grid-section__card3-item-article">
+										<a class="grid-section__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
+										<a class="grid-section__card3-item-text" href="#">Thanks for the recipe lorem nks for the recipe</a>
+									</div>
+								</div>
+								<div class="grid-section__card3-item">
+									<a class="grid-section__card3-item-img" href="#"><img src="img/grid-section-card3-img3.jpg" alt="Recipe"></a>
+									<div class="grid-section__card3-item-article">
+										<a class="grid-section__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
+										<a class="grid-section__card3-item-text" href="#">Thanks for the recipe lorem nks for the recipe</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-section__card3-tab-item tab__item">
+								<div class="grid-section__card3-item">
+									<a class="grid-section__card3-item-img" href="#"><img src="img/grid-section-card3-img2.jpg" alt="Recipe"></a>
+									<div class="grid-section__card3-item-article">
+										<a class="grid-section__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
+										<a class="grid-section__card3-item-text" href="#">Thanks for the recipe lorem nks for the recipe</a>
+									</div>
+								</div>
+								<div class="grid-section__card3-item">
+									<a class="grid-section__card3-item-img" href="#"><img src="img/grid-section-card3-img1.jpg" alt="Recipe"></a>
+									<div class="grid-section__card3-item-article">
+										<a class="grid-section__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
+										<a class="grid-section__card3-item-text" href="#">Thanks for the recipe lorem ipsum bla bla bla<br>Thanks for the recipe lore</a>
+									</div>
+								</div>
+								<div class="grid-section__card3-item">
+									<a class="grid-section__card3-item-img" href="#"><img src="img/grid-section-card3-img3.jpg" alt="Recipe"></a>
+									<div class="grid-section__card3-item-article">
+										<a class="grid-section__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
+										<a class="grid-section__card3-item-text" href="#">Thanks for the recipe lorem nks for the recipe</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-section__card3-tab-item tab__item">
+								<div class="grid-section__card3-item">
+									<a class="grid-section__card3-item-img" href="#"><img src="img/grid-section-card3-img3.jpg" alt="Recipe"></a>
+									<div class="grid-section__card3-item-article">
+										<a class="grid-section__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
+										<a class="grid-section__card3-item-text" href="#">Thanks for the recipe lorem nks for the recipe</a>
+									</div>
+								</div>
+								<div class="grid-section__card3-item">
+									<a class="grid-section__card3-item-img" href="#"><img src="img/grid-section-card3-img1.jpg" alt="Recipe"></a>
+									<div class="grid-section__card3-item-article">
+										<a class="grid-section__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
+										<a class="grid-section__card3-item-text" href="#">Thanks for the recipe lorem ipsum bla bla bla<br>Thanks for the recipe lore</a>
+									</div>
+								</div>
+								<div class="grid-section__card3-item">
+									<a class="grid-section__card3-item-img" href="#"><img src="img/grid-section-card3-img2.jpg" alt="Recipe"></a>
+									<div class="grid-section__card3-item-article">
+										<a class="grid-section__card3-item-title" href="#">by <strong>Smuckersreg Toppings</strong></a>
+										<a class="grid-section__card3-item-text" href="#">Thanks for the recipe lorem nks for the recipe</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-section__card3-footer">
+								<div class="grid-section__card3-footer-social">
+									<a class="fas fa-print grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="far fa-envelope grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-facebook-f grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-pinterest-square grid-section__card-header-social-item" href="#" target="_blank"></a>
+								</div>
+								<a class="grid-section__card3-footer-button" href="#">view more</a>
+							</div>
+						</div>
+						<div class="grid-section__card4 grid-section__card">
+							<h3 class="grid-section__card4-header">Tags</h3>
+							<a class="grid-section__card4-tag" href="#">#yummy</a>
+							<a class="grid-section__card4-tag" href="#">#sweet</a>
+							<a class="grid-section__card4-tag" href="#">#dinner</a>
+							<a class="grid-section__card4-tag" href="#">#lunch</a>
+							<a class="grid-section__card4-tag" href="#">#breakfast</a>
+							<a class="grid-section__card4-tag" href="#">#fresh</a>
+							<a class="grid-section__card4-tag" href="#">#tasty</a>
+							<a class="grid-section__card4-tag" href="#">#delish</a>
+							<a class="grid-section__card4-tag" href="#">#delicious</a>
+							<a class="grid-section__card4-tag" href="#">#eating</a>
+							<a class="grid-section__card4-tag" href="#">#food</a>
+						</div>
+						<div class="grid-section__card5 grid-section__card">
+							<h3 class="grid-section__card5-header">Calendar</h3>
+							<div class="grid-section__card5-calendar">
+								<div class="grid-section__card5-calendar-bar">
+									<button class="fas fa-angle-left grid-section__card5-calendar-button"></button>
+									<p class="grid-section__card5-calendar-date">June 2017</p>
+									<button class="fas fa-angle-right grid-section__card5-calendar-button"></button>
+								</div>
+								<div class="grid-section__card5-calendar-content">
+									<a class="grid-section__card5-calendar-week" href="#">Su</a>
+									<a class="grid-section__card5-calendar-week" href="#">Mo</a>
+									<a class="grid-section__card5-calendar-week" href="#">Tu</a>
+									<a class="grid-section__card5-calendar-week" href="#">We</a>
+									<a class="grid-section__card5-calendar-week" href="#">Th</a>
+									<a class="grid-section__card5-calendar-week" href="#">Fr</a>
+									<a class="grid-section__card5-calendar-week" href="#">Sa</a>
+									<a class="grid-section__card5-calendar-day not-active" href="#">28</a>
+									<a class="grid-section__card5-calendar-day not-active" href="#">29</a>
+									<a class="grid-section__card5-calendar-day not-active" href="#">30</a>
+									<a class="grid-section__card5-calendar-day not-active" href="#">31</a>
+									<a class="grid-section__card5-calendar-day" href="#">1</a>
+									<a class="grid-section__card5-calendar-day" href="#">2</a>
+									<a class="grid-section__card5-calendar-day" href="#">3</a>
+									<a class="grid-section__card5-calendar-day" href="#">4</a>
+									<a class="grid-section__card5-calendar-day" href="#">5</a>
+									<a class="grid-section__card5-calendar-day" href="#">6</a>
+									<a class="grid-section__card5-calendar-day" href="#">7</a>
+									<a class="grid-section__card5-calendar-day" href="#">8</a>
+									<a class="grid-section__card5-calendar-day" href="#">9</a>
+									<a class="grid-section__card5-calendar-day" href="#">10</a>
+									<a class="grid-section__card5-calendar-day" href="#">11</a>
+									<a class="grid-section__card5-calendar-day" href="#">12</a>
+									<a class="grid-section__card5-calendar-day" href="#">13</a>
+									<a class="grid-section__card5-calendar-day" href="#">14</a>
+									<a class="grid-section__card5-calendar-day" href="#">15</a>
+									<a class="grid-section__card5-calendar-day" href="#">16</a>
+									<a class="grid-section__card5-calendar-day" href="#">17</a>
+									<a class="grid-section__card5-calendar-day" href="#">18</a>
+									<a class="grid-section__card5-calendar-day" href="#">19</a>
+									<a class="grid-section__card5-calendar-day" href="#">20</a>
+									<a class="grid-section__card5-calendar-day" href="#">21</a>
+									<a class="grid-section__card5-calendar-day" href="#">22</a>
+									<a class="grid-section__card5-calendar-day" href="#">23</a>
+									<a class="grid-section__card5-calendar-day" href="#">24</a>
+									<a class="grid-section__card5-calendar-day" href="#">25</a>
+									<a class="grid-section__card5-calendar-day" href="#">26</a>
+									<a class="grid-section__card5-calendar-day" href="#">27</a>
+									<a class="grid-section__card5-calendar-day" href="#">28</a>
+									<a class="grid-section__card5-calendar-day" href="#">29</a>
+									<a class="grid-section__card5-calendar-day" href="#">30</a>
+									<a class="grid-section__card5-calendar-day not-active" href="#">1</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-section__column3 grid-section__column">
+						<div class="grid-section__card6 grid-section__card">
+							<h3 class="grid-section__card6-header">Popular Now</h3>
+							<a class="grid-section__card6-title" href="#">Vanilla Frozen Coffee</a>
+							<p class="grid-section__card6-text">Mix coffee, sugar and creamer.<br>Pour into blender and add ice cubes.<br>Blend until smooth.</p>
+							<div class="grid-section__card6-bar">
+								<a class="grid-section__card6-button" href="#">GET IT RECIPE</a>
+								<div class="grid-section__card6-info recipe-info">
+									<p class="grid-section__card6-info1 recipe-info1">6mins</p>
+									<p class="grid-section__card6-info2 recipe-info2">240</p>
+									<p class="grid-section__card6-info3 recipe-info3">400</p>
+								</div>
+							</div>
+						</div>
+						<div class="grid-section__card7 grid-section__card">
+							<div class="grid-section__card7-header">
+								<h3 class="grid-section__card7-header-title">Timeline</h3>
+								<div class="grid-section__card-header-social">
+									<a class="fas fa-print grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="far fa-envelope grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-facebook-f grid-section__card-header-social-item" href="#" target="_blank"></a>
+									<a class="fab fa-pinterest-square grid-section__card-header-social-item" href="#" target="_blank"></a>
+								</div>
+							</div>
+							<a class="grid-section__card7-title" href="#">Time line</a>
+							<div class="grid-section__card7-container">
+								<div class="grid-section__card7-item1 grid-section__card7-item">
+									<p class="grid-section__card7-item-title">easy</p>
+									<div class="grid-section__card7-item-bar">
+										<div class="grid-section__card7-item-progress1"></div>
+										<p class="grid-section__card7-item-text">15mins</p>
+									</div>
+								</div>
+								<div class="grid-section__card7-item2 grid-section__card7-item">
+									<p class="grid-section__card7-item-title">MIDDLE</p>
+									<div class="grid-section__card7-item-bar">
+										<div class="grid-section__card7-item-progress2"></div>
+										<p class="grid-section__card7-item-text">25mins</p>
+									</div>
+								</div>
+								<div class="grid-section__card7-item3 grid-section__card7-item">
+									<p class="grid-section__card7-item-title">LONG</p>
+									<div class="grid-section__card7-item-bar">
+										<div class="grid-section__card7-item-progress3"></div>
+										<p class="grid-section__card7-item-text">40mins</p>
+									</div>
+								</div>
+							</div>
+							<p class="grid-section__card7-text">Eam adhuc iudico percipitur ex, ut malis audire voluptaria has.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="account-forms">
+			<div class="page-width">
+				<div class="account-forms__wrapper">
+					<div class="account-forms__card1 account-forms__card">
+						<h3 class="account-forms__card-header">Login</h3>
+						<p class="account-forms__card-title">Login for LEMON</p>
+						<form class="account-forms__card-form" action="index.html" method="post">
+							<input class="account-forms__card-input" type="text" name="login" placeholder="email or login">
+							<input class="account-forms__card-input" type="password" name="password" placeholder="password">
+							<div class="account-forms__card1-options">
+								<label class="account-forms__card1-options-save" for="save-auth">
+									<input class="account-forms__card1-options-save-check" id="save-auth" type="checkbox" name="save-auth" value="">
+									<span class="account-forms__card1-options-text">Remember me</span>
 								</label>
-								<a class="layer6__card1-options-text2 layer6__card1-options-text" href="#">Forgot your password ?</a>
+								<a class="account-forms__card1-options-text2 account-forms__card1-options-text" href="#">Forgot your password ?</a>
 							</div>
-							<button class="layer6__card-button" type="submit" name="button">LOGIN</button>
+							<button class="account-forms__card-button" type="submit">LOGIN</button>
 						</form>
-						<div class="layer6__card-social">
-							<a class="fab fa-facebook-f layer6__card-social-item" href="#"></a>
-							<a class="fab fa-google-plus-g layer6__card-social-item" href="#"></a>
+						<div class="account-forms__card-social">
+							<a class="fab fa-facebook-f account-forms__card-social-item" href="#"></a>
+							<a class="fab fa-google-plus-g account-forms__card-social-item" href="#"></a>
 						</div>
-						<div class="layer6__card1-note"><a href="#">Don’t have an accont? Sign in</a></div>
+						<div class="account-forms__card1-note"><a class="account-forms__card1-note-wrapper" href="#">Don’t have an accont? Sign in</a></div>
 					</div>
-					<div class="layer6__card2 layer6__card">
-						<h3 class="layer6__card-header">Sign in</h3>
-						<p class="layer6__card-title">Sign in for LEMON</p>
-						<form class="layer6__card-form" method="post" enctype="multipart/form-data">
-							<input class="layer6__card-input" type="text" name="login" placeholder="email">
-							<input class="layer6__card-input" type="text" name="username" placeholder="username">
-							<input class="layer6__card-input" type="password" name="password" placeholder="password">
-							<input class="layer6__card-input" type="password" name="password" placeholder="repeat password">
-							<button class="layer6__card-button" type="submit" name="button">SIGN UP</button>
+					<div class="account-forms__card2 account-forms__card">
+						<h3 class="account-forms__card-header">Sign in</h3>
+						<p class="account-forms__card-title">Sign in for LEMON</p>
+						<form class="account-forms__card-form" action="index.html" method="post">
+							<input class="account-forms__card-input" type="email" name="email" placeholder="email">
+							<input class="account-forms__card-input" type="text" name="username" placeholder="username">
+							<input class="account-forms__card-input" type="password" name="password" placeholder="password">
+							<input class="account-forms__card-input" type="password" name="password" placeholder="repeat password">
+							<button class="account-forms__card-button" type="submit">SIGN UP</button>
 						</form>
-						<div class="layer6__card-social">
-							<a class="fab fa-facebook-f layer6__card-social-item" href="#"></a>
-							<a class="fab fa-google-plus-g layer6__card-social-item" href="#"></a>
+						<div class="account-forms__card-social">
+							<a class="fab fa-facebook-f account-forms__card-social-item" href="#"></a>
+							<a class="fab fa-google-plus-g account-forms__card-social-item" href="#"></a>
 						</div>
-						<p class="layer6__card2-note">By joining LEMON, you agree to our <a href="#">Terms of Service.</a></p>
+						<p class="account-forms__card2-note">By joining LEMON, you agree to our <a class="account-forms__card2-note-wrapper" href="#">Terms of Service.</a></p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="layer7">
+		<section class="comments">
 			<div class="page-width">
-				<div class="layer7__wrapper">
-					<div class="layer7__item1 layer7__item">
-						<div class="layer7__item1-header">
-							<h3 class="layer7__item-title">Post a Comment</h3>
-							<div class="layer7__item1-socials">
-								<a class="layer7__item1-social" href="#">Facebook</a>
-								<a class="layer7__item1-social" href="#">Twitter</a>
+				<div class="comments__wrapper">
+					<div class="comments__item1 comments__item">
+						<div class="comments__item1-header">
+							<h3 class="comments__item-title">Post a Comment</h3>
+							<div class="comments__item1-socials">
+								<a class="comments__item1-social" href="#">Facebook</a>
+								<a class="comments__item1-social" href="#">Twitter</a>
 							</div>
 						</div>
-						<div class="layer7__item1-content">
-							<img class="layer7__item1-content-avatar avatar" src="img/avatar.png" alt="Avatar">
-							<input class="layer7__item1-content-input" type="text" value="">
-							<button class="layer7__item1-content-button" type="button" name="button">POST</button>
+						<div class="comments__item1-content">
+							<img class="comments__item1-content-avatar avatar" src="img/avatar.png" alt="Avatar">
+							<input class="comments__item1-content-input" type="text" value="">
+							<button class="comments__item1-content-button">POST</button>
 						</div>
 					</div>
-					<div class="layer7__item2 layer7__item">
-						<h3 class="layer7__item2-title layer7__item-title">Comments</h3>
-						<div class="layer7__item2-container">
-							<img class="layer7__item2-avatar avatar" src="img/avatar.png" alt="Avatar">
-							<div class="layer7__item2-inner-container">
-								<div class="layer7__item2-header">
-									<div class="layer7__item2-header-content">
-										<div class="layer7__item2-header-title">
-											<a href="#">post by</a>
-											<div class="layer7__item2-header-author-container">
-												<a class="layer7__item2-header-author author" href="#">Smuckersreg Toppings</a>
-												<button class="layer7__item2-header-button" type="button" name="button">reply</button>
+					<div class="comments__item2 comments__item">
+						<h3 class="comments__item2-title comments__item-title">Comments</h3>
+						<div class="comments__item2-container">
+							<img class="comments__item2-avatar avatar" src="img/avatar.png" alt="Avatar">
+							<div class="comments__item2-inner-container">
+								<div class="comments__item2-header">
+									<div class="comments__item2-header-content">
+										<div class="comments__item2-header-title">
+											<p class="comments__item2-header-title-text">post by</p>
+											<div class="comments__item2-header-author-container">
+												<a class="comments__item2-header-author author" href="#">Smuckersreg Toppings</a>
+												<button class="comments__item2-header-button">reply</button>
 											</div>
 										</div>
-										<p class="layer7__item2-header-date">6/10/2014</p>
+										<p class="comments__item2-header-date">6/10/2014</p>
 									</div>
-									<div class="layer7__item2-header-info">
-										<button class="layer7__item2-header-info-item1" type="button" name="button">456</button>
-										<button class="layer7__item2-header-info-item2" type="button" name="button">15</button>
+									<div class="comments__item2-header-info">
+										<button class="comments__item2-header-info-item1">456</button>
+										<button class="comments__item2-header-info-item2">15</button>
 									</div>
 								</div>
-								<div class="layer7__item2-content">
-									<div class="layer7__item2-content-img">
+								<div class="comments__item2-content">
+									<div class="comments__item2-content-img">
 										<img src="img/recipe1.jpg" alt="Recipe">
-										<i class="layer7__item2-content-social fab fa-pinterest"></i>
+										<i class="comments__item2-content-social fab fa-pinterest"></i>
 									</div>
-									<p class="layer7__item-2-content-text">Thanks for the recipe</p>
+									<p class="comments__item-2-content-text">Thanks for the recipe</p>
 								</div>
-								<div class="layer7__item2-reply-container layer7__item2-container">
-									<img class="layer7__item2-avatar avatar" src="img/avatar.png" alt="Avatar">
-									<div class="layer7__item2-inner-container">
-										<div class="layer7__item2-header">
-											<div class="layer7__item2-header-content">
-												<div class="layer7__item2-header-title">
-													<a href="#">post by</a>
-													<div class="layer7__item2-header-author-container">
-														<a class="layer7__item2-header-author author" href="#">Smuckersreg Toppings</a>
-														<button class="layer7__item2-header-button" type="button" name="button">reply</button>
+								<div class="comments__item2-reply-container comments__item2-container">
+									<img class="comments__item2-avatar avatar" src="img/avatar.png" alt="Avatar">
+									<div class="comments__item2-inner-container">
+										<div class="comments__item2-header">
+											<div class="comments__item2-header-content">
+												<div class="comments__item2-header-title">
+													<p class="comments__item2-header-title-text">post by</p>
+													<div class="comments__item2-header-author-container">
+														<a class="comments__item2-header-author author" href="#">Smuckersreg Toppings</a>
+														<button class="comments__item2-header-button">reply</button>
 													</div>
 												</div>
-												<p class="layer7__item2-header-date">6/10/2014</p>
+												<p class="comments__item2-header-date">6/10/2014</p>
 											</div>
-											<div class="layer7__item2-header-info">
-												<button class="layer7__item2-header-info-item1" type="button" name="button">456</button>
-												<button class="layer7__item2-header-info-item2" type="button" name="button">15</button>
+											<div class="comments__item2-header-info">
+												<button class="comments__item2-header-info-item1">456</button>
+												<button class="comments__item2-header-info-item2">15</button>
 											</div>
 										</div>
-										<div class="layer7__item2-content">
-											<p class="layer7__item-2-content-text"><strong>Thanks for the recipe lorem ipsum bla bla bla Thanks for the recipe lore</strong></p>
-											<div class="layer7__item2-reply-content">
-												<a class="layer7__item2-reply-content-comments" href="#">24 more comments</a>
+										<div class="comments__item2-content">
+											<p class="comments__item-2-content-text"><strong>Thanks for the recipe lorem ipsum bla bla bla Thanks for the recipe lore</strong></p>
+											<div class="comments__item2-reply-content">
+												<a class="comments__item2-reply-content-comments" href="#">24 more comments</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="layer7__item2-container">
-							<img class="layer7__item2-avatar avatar" src="img/avatar.png" alt="Avatar">
-							<div class="layer7__item2-inner-container">
-								<div class="layer7__item2-header">
-									<div class="layer7__item2-header-content">
-										<div class="layer7__item2-header-title">
-											<a href="#">post by</a>
-											<div class="layer7__item2-header-author-container">
-												<a class="layer7__item2-header-author author" href="#">Smuckersreg Toppings</a>
-												<button class="layer7__item2-header-button" type="button" name="button">reply</button>
+						<div class="comments__item2-container">
+							<img class="comments__item2-avatar avatar" src="img/avatar.png" alt="Avatar">
+							<div class="comments__item2-inner-container">
+								<div class="comments__item2-header">
+									<div class="comments__item2-header-content">
+										<div class="comments__item2-header-title">
+											<p class="comments__item2-header-title-text">post by</p>
+											<div class="comments__item2-header-author-container">
+												<a class="comments__item2-header-author author" href="#">Smuckersreg Toppings</a>
+												<button class="comments__item2-header-button">reply</button>
 											</div>
 										</div>
-										<p class="layer7__item2-header-date">6/10/2014</p>
+										<p class="comments__item2-header-date">6/10/2014</p>
 									</div>
-									<div class="layer7__item2-header-info">
-										<button class="layer7__item2-header-info-item1" type="button" name="button">456</button>
-										<button class="layer7__item2-header-info-item2" type="button" name="button">15</button>
+									<div class="comments__item2-header-info">
+										<button class="comments__item2-header-info-item1">456</button>
+										<button class="comments__item2-header-info-item2">15</button>
 									</div>
 								</div>
-								<div class="layer7__item2-content">
-									<p class="layer7__item-2-content-text">Thanks for the recipe</p>
+								<div class="comments__item2-content">
+									<p class="comments__item-2-content-text">Thanks for the recipe</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="layer7__item3 layer7__item">
-						<ul class="layer7__nav">
-							<li class="layer7__nav-item"><a class="layer7__nav-link" href="#">&lt</a></li>
-							<li class="layer7__nav-item"><a class="layer7__nav-link" href="#">1</a></li>
-							<li class="layer7__nav-item"><a class="layer7__nav-link active" href="#">2</a></li>
-							<li class="layer7__nav-item"><a class="layer7__nav-link" href="#">3</a></li>
-							<li class="layer7__nav-item"><a class="layer7__nav-link" href="#">4</a></li>
-							<li class="layer7__nav-item"><a class="layer7__nav-link" href="#">5</a></li>
-							<li class="layer7__nav-item"><a class="layer7__nav-link" href="#">6</a></li>
-							<li class="layer7__nav-item"><a class="layer7__nav-link" href="#">&gt</a></li>
-						</ul>
+					<div class="comments__item3 comments__item">
+						<div class="comments__nav">
+							<a class="comments__nav-link" href="#">&lt</a>
+							<a class="comments__nav-link" href="#">1</a>
+							<a class="comments__nav-link comments__nav-link--active" href="#">2</a>
+							<a class="comments__nav-link" href="#">3</a>
+							<a class="comments__nav-link" href="#">4</a>
+							<a class="comments__nav-link" href="#">5</a>
+							<a class="comments__nav-link" href="#">6</a>
+							<a class="comments__nav-link" href="#">&gt</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -584,13 +634,13 @@
 							<a class="fab fa-pinterest footer__social-item" href="#" target="_blank"></a>
 						</div>
 					</div>
-					<ul class="footer__nav">
-						<li class="footer__nav-item"><a class="footer__nav-link" href="../Lemon">HOME</a></li>
-						<li class="footer__nav-item"><a class="footer__nav-link" href="#">Recipes</a></li>
-						<li class="footer__nav-item"><a class="footer__nav-link" href="#">Photo Galleries</a></li>
-						<li class="footer__nav-item"><a class="footer__nav-link" href="#">Videos</a></li>
-						<li class="footer__nav-item"><a class="footer__nav-link" href="#">All Categories</a></li>
-					</ul>
+					<nav class="footer__nav">
+						<a class="footer__nav-link" href="/Lemon">HOME</a>
+						<a class="footer__nav-link" href="#">Recipes</a>
+						<a class="footer__nav-link" href="#">Photo Galleries</a>
+						<a class="footer__nav-link" href="#">Videos</a>
+						<a class="footer__nav-link" href="#">All Categories</a>
+					</nav>
 					<div class="footer__text-container">
 						<p class="footer__text">2016-2017 LEMON. All rights reserved</p>
 					</div>
@@ -608,24 +658,25 @@
 		</div>
 	</footer>
 	<div class="hamburger">
-		<div class="hamburger__menu">
-			<ul class="hamburger__nav">
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="../Lemon">HOME</a></li>
-				<li class="hamburger__nav-item hamburger__submenu-parent"><button class="hamburger__nav-link hamburger__nav-button">Recipes</button>
-					<ul class="hamburger__nav-submenu">
-						<li class="hamburger__nav-submenu-item"><a class="hamburger__nav-submenu-link" href="#">RECOMMENDED</a></li>
-						<li class="hamburger__nav-submenu-item"><a class="hamburger__nav-submenu-link" href="#">POPULAR</a></li>
-						<li class="hamburger__nav-submenu-item"><a class="hamburger__nav-submenu-link" href="#">QUICK & EASY</a></li>
-						<li class="hamburger__nav-submenu-item"><a class="hamburger__nav-submenu-link" href="#">HEALTHY</a></li>
-						<li class="hamburger__nav-submenu-item"><a class="hamburger__nav-submenu-link" href="#">NEWEST</a></li>
-					</ul>
-				</li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#">Photo Galleries</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#">Videos</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#">All Categories</a></li>
-			</ul>
+		<div class="hamburger__wrapper">
+			<nav class="hamburger__nav">
+				<a class="hamburger__nav-link hamburger__nav-item" href="/Lemon">HOME</a>
+				<div class="hamburger__nav-accordion hamburger__nav-item accordion">
+					<a class="hamburger__nav-accordion-button hamburger__nav-link accordion__button" href="javascript:void(0)">Recipes</a>
+					<div class="hamburger__nav-accordion accordion__wrapper">
+						<a class="hamburger__nav-accordion-link" href="#">RECOMMENDED</a>
+						<a class="hamburger__nav-accordion-link" href="#">POPULAR</a>
+						<a class="hamburger__nav-accordion-link" href="#">QUICK & EASY</a>
+						<a class="hamburger__nav-accordion-link" href="#">HEALTHY</a>
+						<a class="hamburger__nav-accordion-link" href="#">NEWEST</a>
+					</div>
+				</div>
+				<a class="hamburger__nav-link hamburger__nav-item" href="#">Photo Galleries</a>
+				<a class="hamburger__nav-link hamburger__nav-item" href="#">Videos</a>
+				<a class="hamburger__nav-link hamburger__nav-item" href="#">All Categories</a>
+			</nav>
 		</div>
 	</div>
-	<script src="script/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
